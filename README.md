@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>WSBridgeApp</title>
-</head>
-<body>
+
 
   <h1>📱 WSBridgeApp</h1>
   <p><strong>WSBridgeApp</strong> is a SwiftUI-based prototype app built for WSB University students. It offers a message board, a Pomodoro-style study timer, and a friend-finder with swipe UI interactions.</p>
