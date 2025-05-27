@@ -70,10 +70,10 @@ WSBridgeApp/
 
   <h2>📹 Demo Videos</h2>
   <ul>
-    <li>🔁 <strong>Full App Demo</strong>: <em>[Insert link here]</em></li>
-    <li>✍️ <strong>Posts & Comments</strong>: <em>[Insert link here]</em></li>
-    <li>⏰ <strong>Study Timer</strong>: <em>[Insert link here]</em></li>
-    <li>💘 <strong>Find Friends (Swipe)</strong>: <em>[Insert link here]</em></li>
+    <li>🔁 <strong>Full App Demo</strong>: <em>[https://drive.google.com/file/d/13hc3BX2Z7v8s3DAuHFhlZt6WljSO5bMb/view?usp=sharing]</em></li>
+    <li>✍️ <strong>Posts & Comments</strong>: <em>[https://drive.google.com/file/d/1-keyndIpVV-TCOmjmyUQYgmCQE3xBoKs/view?usp=sharing]</em></li>
+    <li>⏰ <strong>Study Timer</strong>: <em>[https://drive.google.com/file/d/1jvwLORXYvz5RG00dN0dlMvjJb81oDvOn/view?usp=sharing]</em></li>
+    <li>💘 <strong>Find Friends (Swipe)</strong>: <em>[https://drive.google.com/file/d/1X0gD3mmNZZVepv-cJZWn9elN7rOAWZzR/view?usp=sharing]</em></li>
   </ul>
 
   <hr>
