@@ -1,24 +1,51 @@
-//
-//  ContentView.swift
-//  WSBridge
-//
-//  Created by JungWonJung on 24/05/2025.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+    @State private var isMenuOpen = false
+    @State private var selectedScreen = "board"
+    @StateObject private var viewModel = PostViewModel()
 
-#Preview {
-    ContentView()
+    var body: some View {
+        ZStack(alignment: .leading) {
+            LoadingView(viewModel: viewModel, selectedScreen: $selectedScreen)
+
+            if isMenuOpen {
+                Color.black.opacity(0.3)
+                    .ignoresSafeArea()
+                    .onTapGesture {
+                        withAnimation {
+                            isMenuOpen.toggle()
+                        }
+                    }
+            }
+
+            SideMenuView { screen in
+                selectedScreen = screen
+                withAnimation {
+                    isMenuOpen = false
+                }
+            }
+            .frame(width: UIScreen.main.bounds.width * 0.5)
+            .offset(x: isMenuOpen ? 0 : -UIScreen.main.bounds.width * 0.5)
+            .animation(.easeInOut(duration: 0.3), value: isMenuOpen)
+
+            VStack {
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        withAnimation {
+                            isMenuOpen.toggle()
+                        }
+                    }) {
+                        Image(systemName: "line.horizontal.3")
+                            .resizable()
+                            .frame(width: 24, height: 18)
+                            .padding()
+                            .foregroundColor(.black)
+                    }
+                }
+                Spacer()
+            }
+        }
+    }
 }
